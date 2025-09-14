@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multi‑Link Opener</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 12px; min-width: 260px; }
+      h1 { font-size: 16px; margin: 0 0 8px; }
+      button { padding: 8px 12px; border-radius: 8px; border: none; background: #1a73e8; color: #fff; font-weight: 600; cursor: pointer; }
+      button.secondary { background: #dadce0; color: #1f1f1f; }
+      .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+      .small { font-size: 12px; opacity: .8; margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <h1>Multi‑Link Opener</h1>
+    <div class="row">
+      <button id="toggle">Start / Stop Selecting</button>
+      <button id="open" class="secondary">Open Selected</button>
+      <button id="export" class="secondary">Export CSV</button>
+    </div>
+    <div class="small">On the page: click links to mark them, Shift+Drag to lasso; then open or export.</div>
+    <script src="popup.js"></script>
+  </body>
+</html>

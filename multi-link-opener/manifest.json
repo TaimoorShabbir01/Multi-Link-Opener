@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Multi‑Link Opener",
+  "description": "Select multiple links on a page, then open or export them (CSV) all at once.",
+  "version": "1.1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Multi‑Link Opener"
+  },
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

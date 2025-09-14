@@ -1,0 +1,12 @@
+#mlo-ui { position: fixed; z-index: 999999; right: 16px; bottom: 16px; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+#mlo-ui .mlo-panel { background: rgba(32,33,36,.98); color: #fff; padding: 10px 12px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.3); min-width: 280px; }
+#mlo-ui .mlo-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 6px 0; }
+#mlo-ui .mlo-actions button { padding: 6px 10px; border: none; border-radius: 8px; cursor: pointer; background: #e8eaed; color: #1f1f1f; font-weight: 600; }
+#mlo-ui .mlo-actions button:hover { filter: brightness(0.95); }
+#mlo-ui .mlo-count { font-size: 12px; opacity: 0.85; }
+#mlo-ui .mlo-hint { font-size: 11px; opacity: 0.75; margin-top: 4px; }
+#mlo-ui .mlo-dot { width: 10px; height: 10px; border-radius: 50%; background: #34a853; display: inline-block; margin-left: 8px; }
+
+.mlo-selected { outline: 2px solid #1a73e8 !important; outline-offset: 2px !important; border-radius: 4px; }
+.mlo-selecting a[href] { cursor: cell !important; }
+.mlo-lasso { position: fixed; border: 2px dashed #1a73e8; background: rgba(26,115,232,0.08); pointer-events: none; z-index: 999998; }
